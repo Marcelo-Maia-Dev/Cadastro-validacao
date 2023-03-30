@@ -1,0 +1,115 @@
+/* Geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+}
+
+input, label{
+    display: block;
+    outline: none;
+    width: 100%;
+}
+
+input:focus, label:focus{
+    outline: none;
+}
+
+a{
+    color: #e60084; /* Cor que vai ficar o link */
+}
+
+body{
+    padding-top: 5vh; /*view height -> 5% da tela */
+    background-image: url('../img/img-02.jpeg'); /* incluir a imagem no fundo */
+    background-size: cover; /* Centralizar a imagem e deixar ela do tamanho da tela*/
+    background-position-y: -180px;
+}
+
+/* form */
+#main-container{
+    width: 500px; /* Delimitando a largura do formulario na tela */
+    margin-left: auto;
+    margin-right: auto; /* Centralizar na horizontal */
+    background-color: #fff; /* Cor de fundo do formulario */
+    border-radius: 10px; /* Aredondamento das bordas dos cantos */ 
+    padding: 25px; /* espaçamento interno do formulario */
+}
+
+#main-container h1 {
+    text-align: center; /* Alinhar ao centro */
+    margin-bottom: 25px; /* Afasta do formulario em 25 pixel */
+    font-size: 1.6rem; /* Adaptada ao elemento root */
+}
+
+form {
+    display: flex; 
+    flex-wrap: wrap; /* Alinhar os elementos dependendo da configuração */
+    justify-content: space-between; /* Quando o elemento tiver a metado da largura da tela, ele da um pequeno espaçamento */
+}
+
+.full-box {
+    flex: 1 1 100%; /* Define como um ítem será posicionado para no espaço disponível dentro de seu container */
+    position: relative; /* É provavel que tenha um elemento com posição absoluta e já estou me preparando para ele ser a referencia desse elemento com posição absoluta */ 
+}
+
+.half-box {
+    flex: 1 1 45%;
+    position: relative;
+}
+
+.spacing {
+    margin-right: 2.5%;
+}
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+
+input:focus {
+    border-color: #e60084;
+}
+
+input[type="sumit"] {
+    background-color: #e60084;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#agreement {
+    margin-right: 5px; /* Espeçamento para descolar um pouco o texto */
+}
+
+#agreement, #agreement-label {
+    display: inline-block;
+    width: auto;
+}
+
+/* Validações */
+.error-validatio {
+    color: #ff1a1a;
+    position: absolute;
+    top: 57px;
+    font-size: 12px;
+}
+
+.template {
+    display: none;
+}
+
+
+
