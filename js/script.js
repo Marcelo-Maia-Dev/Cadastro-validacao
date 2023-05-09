@@ -97,7 +97,7 @@ class Validator {
 
     let email = input.value;
 
-    let errorMessage = `Insira um e-mail no padrão matheus@email.com`;
+    let errorMessage = `Insira um e-mail no padrão marcelo@email.com`;
 
     if(!re.test(email)) {
       this.printMessage(input, errorMessage);
